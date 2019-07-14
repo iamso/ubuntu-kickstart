@@ -14,8 +14,8 @@ echo "
 deb http://nginx.org/packages/ubuntu/ xenial nginx
 deb-src http://nginx.org/packages/ubuntu/ xenial nginx" >> /etc/apt/sources.list
 
-# add sources for node 9.x
-curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - &>/dev/null
+# add sources for node 12.x
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &>/dev/null
 
 # update and install packages
 sudo apt-get update -y
