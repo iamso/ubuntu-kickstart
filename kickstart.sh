@@ -21,6 +21,7 @@ else
 fi
 
 # update grup
+echo "GRUB_CMDLINE_LINUX=\"nomodeset\"" >> /etc/default/grub
 echo "GRUB_RECORDFAIL_TIMEOUT=2" >> /etc/default/grub
 update-grub &>/dev/null
 echo "==> Updated Grub"
